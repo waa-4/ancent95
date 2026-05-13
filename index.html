@@ -186,6 +186,10 @@
     background: var(--window-bg);
     border-top: 1px solid var(--sand-mid);
   }
+  .window-body:has(iframe) {
+    padding: 0;
+    overflow: hidden;
+  }
 
   .window-statusbar {
     border-top: 1px solid var(--sand-mid);
@@ -690,7 +694,7 @@ function addTaskbarBtn(id, title, icon) {
   container.appendChild(btn);
 }
 function removeTaskbarBtn(winId) {
-  const btn = document.getElementById('tbtn-' + winId);
+  const btn = document.getElementById('tbtn-' + winId) || document.getElementById('tbtn-win-' + winId.replace('win-',''));
   if (btn) btn.remove();
 }
 function updateTaskbarBtns(activeWinId) {
