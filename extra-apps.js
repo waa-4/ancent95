@@ -20,17 +20,53 @@
 
 var extraApps = [
 
-  // EXAMPLE APP — uncomment to try it out!
+  {
+    id: "ancent95site",
+    title: "ANCENT95 Site",
+    icon: "🏜️",
+    width: 860,
+    height: 520,
+    content: () => `<iframe src="https://waa-4.github.io/ancent95/" style="width:100%;height:100%;border:none;"></iframe>`,
+    hasMenu: false,
+    menuItems: [],
+    statusBar: ["waa-4.github.io/ancent95"]
+  },
+
+  {
+    id: "jerryhome",
+    title: "Jerry Home",
+    icon: "🏠",
+    width: 860,
+    height: 520,
+    content: () => `<iframe src="https://waa-4.github.io/jerry-home/" style="width:100%;height:100%;border:none;"></iframe>`,
+    hasMenu: false,
+    menuItems: [],
+    statusBar: ["waa-4.github.io/jerry-home"]
+  },
+
+  {
+    id: "becauseblocks",
+    title: "Because.Blocks",
+    icon: "🧱",
+    width: 860,
+    height: 520,
+    content: () => `<iframe src="https://waa-4.github.io/because.blocks/" style="width:100%;height:100%;border:none;"></iframe>`,
+    hasMenu: false,
+    menuItems: [],
+    statusBar: ["waa-4.github.io/because.blocks"]
+  },
+
+  // ADD MORE SITES BELOW — copy this block and fill in your details:
   // {
-  //   id: "myapp",
-  //   title: "My App",
-  //   icon: "⚗️",
-  //   width: 320,
-  //   height: 220,
-  //   content: () => `<p style="padding:8px">Hello from my custom app!</p>`,
+  //   id: "uniqueid",
+  //   title: "Site Name",
+  //   icon: "🌐",
+  //   width: 860,
+  //   height: 520,
+  //   content: () => `<iframe src="https://waa-4.github.io/yoursite/" style="width:100%;height:100%;border:none;"></iframe>`,
   //   hasMenu: false,
   //   menuItems: [],
-  //   statusBar: []
+  //   statusBar: ["waa-4.github.io/yoursite"]
   // },
 
 ];
